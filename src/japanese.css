@@ -1,0 +1,51 @@
+.container{
+    display:flex;
+    justify-content: center
+}
+
+.chat-container{
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 5%;
+    background-color:white;
+    width:90vw;
+    height:130vh;
+    position: relative;
+    bottom: 20vh;
+}
+.title{
+    font-size: 3vw;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(64, 64, 68);
+}
+.textBox{
+    position: relative;
+    top:90%;
+    border-radius: 5%;
+    height:5vh;
+    width:30vw;
+    font-size: 3vh;
+}
+.send{
+    position: relative;
+    left:1vw;
+    width: 4vw;
+    height:4vw;
+}
+.messageDiv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top:120vh;
+}
+.send1{
+    cursor: pointer;
+    color:transparent;
+    background-color: transparent;
+    width: 4vw;
+    height:4vw;
+    position:relative;
+    right:3vw;
+    border-color: transparent;
+}

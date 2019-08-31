@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(214, 215, 218);
+    margin: 0px;
+  }
+
+#header {
+    
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    color:rgb(64, 64, 68);
+    align-items: center;
+    
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.nav{
+    font-size: 8vw;
+    font-size: 8vh;
+    font-weight: bold;
+    margin-left:20vw;
+}
+
+.search{
+  margin-left: 2vw;
+  position: relative;
+  left:10vw;
+}
+.searchBar{
+    background-color:white;
+    margin-left: 5vw;
+    height:3vh;
+    width:10vw;
+    font-size: 2vh;
+}
+.menu{
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.chatrooms{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom:50vh;
+    color:white;
+    font-size: 3vw;
+    /* font-size:3vh; */
+    font-weight: bolder;
+    
+    font-family: 'Open Sans', sans-serif;
+
+}
+.car{
+    width:100vw;
+}
