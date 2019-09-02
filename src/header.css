@@ -5,21 +5,25 @@ body{
 
 #header {
     
+    position: relative;
+    
     display:flex;
     justify-content: center;
-    justify-content: space-evenly;
+   top:1px;
     color:rgb(64, 64, 68);
     align-items: center;
-    
+    background-color: rgb(214, 215, 218);
     font-family: 'Open Sans', sans-serif;
-
+    
 }
 
 .nav{
     font-size: 8vw;
     font-size: 8vh;
     font-weight: bold;
-    margin-left:20vw;
+    position: relative;
+    top:5vh;
+    
 }
 
 .search{

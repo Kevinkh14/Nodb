@@ -3,20 +3,20 @@ import './header.css';
 
 
 class Header extends Component{
-    render(){
+    render(props){
         return(
-            <div>
+            
             <div id = 'header'>
-                <img className = 'menu'src="https://img.icons8.com/android/50/000000/menu.png"/>
+                {/* <img className = 'menu'src="https://img.icons8.com/android/50/000000/menu.png"/> */}
                 <h1 className = 'nav'>Tuner Talk</h1>
-                <img className ='search'
-                src="https://img.icons8.com/ios/50/000000/search--v1.png"/>    
-            <input className='searchBar'type = 'text' placeholder ="Search"/>
+                {/* <img className ='search'
+                src="https://img.icons8.com/ios/50/000000/search--v1.png"/>     */}
+            {/* <input className='searchBar'type = 'text' placeholder ="Search"/> */}
             </div>
          
         
         
-            </div>
+           
         )
     }
 }

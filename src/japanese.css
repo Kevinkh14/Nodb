@@ -13,11 +13,15 @@
     height:130vh;
     position: relative;
     bottom: 20vh;
+    text-align: center;
 }
 .title{
     font-size: 3vw;
     font-family: 'Open Sans', sans-serif;
     color:rgb(64, 64, 68);
+    height:3vh;
+    position: relative;
+    left:10vw;
 }
 .textBox{
     position: relative;
@@ -32,12 +36,14 @@
     left:1vw;
     width: 4vw;
     height:4vw;
+    top:2vh;
 }
 .messageDiv{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-top:120vh;
+    margin-top:15vh;
+    margin-right: 5vw;
 }
 .send1{
     cursor: pointer;

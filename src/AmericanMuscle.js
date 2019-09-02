@@ -3,11 +3,11 @@ import axios from "axios"
 import './japanese.css'
 import Messages from "./Messages"
 
-class Japanese extends Component{
+class AmericanMuscle extends Component{
     constructor(props){
         super(props);
         this.state={
-            section:"Japanese",
+            section:"AmericanMuscle",
             message:"",
             japanese:[]
         }
@@ -19,7 +19,7 @@ class Japanese extends Component{
 
     componentDidMount(){
         axios
-        .get("/api/jdm")
+        .get("/api/Euro")
         .then(response =>{
             this.setState({japanese: response.data})
         })
@@ -31,7 +31,7 @@ class Japanese extends Component{
     handleSubmit (e){
         
         e.preventDefault()
-        axios.post('/api/jdm',{
+        axios.post('/api/Euro',{
             message:this.state.message
         })
         .then(response => {
@@ -41,18 +41,9 @@ class Japanese extends Component{
         })
         .catch(error =>{
             this.setState({error:"an error accured"})
-        })   
-    }
-    editMessage(id,message){
-        console.log('editMessage', id,message);
-        axios.put('/api/jdm',{message}).then(response =>{
-            this.setState({japanese:response.data})
         })
-    }
-    removeMessage(id){
-        axios.delete("/api/jdm").then(response =>{
-            this.setState({japanese:response.data})
-        })
+        
+       
     }
    
 
@@ -61,12 +52,12 @@ class Japanese extends Component{
         return(
             <div className = 'container'>
                 <div className = 'chat-container'>
-                    <h1 className = 'title'>JDM</h1>
+                    <h1 className = 'title'>American Muscle</h1>
                      <form>
                         <div className = "messageDiv">  
                     <div className = "mes-container">
-                        {this.state.japanese.map((japanese) =>(
-                            <Messages id ={japanese.id}  message ={japanese.message} key ={japanese.id}/>
+                        {this.state.japanese.map((japanese,index) =>(
+                            <Messages  message ={japanese.message} key ={index}/>
                          ))}
                     </div>
                         </div>  
@@ -93,4 +84,4 @@ class Japanese extends Component{
         
     
 }
-export default Japanese;
+export default AmericanMuscle;

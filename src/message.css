@@ -1,0 +1,32 @@
+.mes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+    overflow: auto;
+    height:100vh;
+    width:80vw;
+    background-color:white;
+    border-radius: 5%;
+}
+.mes{
+    color:white;
+    font-size: 3vw;
+    font-size: 3vh;
+    margin-right:5vw;
+    background-color: rgb(13, 137, 253);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.text{
+   
+    position: relative;
+    top:30vh;
+    
+}

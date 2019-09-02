@@ -1,6 +1,9 @@
 .homeButton{
     position: relative;
-    left: 30vw;
-    top:15vh;
+    left: 20vw;
+    bottom:10vh;
+    
     cursor: pointer;
+    width:5vw;
+    
 }
