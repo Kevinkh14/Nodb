@@ -1,34 +1,28 @@
 let messages = [];
-let id = 0 
 
 
-const create= (req,res) =>{
-    
+
+const create= (req,res) =>{ 
     messages.push(req.body)
     res.json(messages)
-    id++
+   
 };
 
 const read=(req,res) =>{
+    console.log(messages  + "hit ")
     res.json(messages)
 };
 
-const edit =(req,res) =>{
-    const{message}=req.body;
-    const updateID = req.params.id;
-    const messageIdex = messages.findIndex(mess => mess.id ===updateID)
-    let mess = messages[messageIdex];
-
-    messages[messageIndex] ={
-        id:mess.id,
-        message:message||mess.message
-    }
+const update =(req,res) =>{
+    console.log(req.body);
+ messages[+req.params.id] = req.body
+ res.json(messages)
 };
 
 const delet = (req,res)=>{
-    const deleteID = req.params.id;
-    messageIndex.messages.findIndex(mess => mess.id == deleteID);
-    messages.splice(messageIdex,1);
+    messages.splice(+req.params.id,1)
+    res.json(messages)
+    console.log(messages)
 
 };
 
@@ -36,6 +30,6 @@ const delet = (req,res)=>{
 module.exports ={
     create,
     read,
-    edit,
+    update,
     delet
 };

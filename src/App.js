@@ -19,10 +19,10 @@ class App extends Component{
      return (
       <div className="App">
         <div>
-        <Header/>
-        <img className = 'homeButton' 
-        src="https://img.icons8.com/material-outlined/50/000000/home--v1.png" 
-        onClick ={()=> this.setState({section:"Home"})}></img>
+          <Header/>
+          <img className = 'homeButton' 
+          src="https://img.icons8.com/material-outlined/50/000000/home--v1.png" 
+          onClick ={()=> this.setState({section:"Home"})}></img>
         </div>
         {this.state.section === "Home"? <Home />:null}
         <ul className="chatrooms">

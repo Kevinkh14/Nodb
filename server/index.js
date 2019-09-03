@@ -8,8 +8,8 @@ app.use(express.json());
 
 app.post("/api/jdm", controller.create)
 app.get("/api/jdm", controller.read)
-app.put("/api/jdm",controller.edit)
-app.delete("/api/jdm",controller.delet)
+app.put("/api/jdm/:id",controller.update)
+app.delete("/api/jdm/:id",controller.delet)
 
 
 app.post("/api/Euro",controller.create)

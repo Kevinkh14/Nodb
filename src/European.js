@@ -25,6 +25,8 @@ class European extends Component{
         })
      }
 
+    
+
     handleMessage(e){
         this.setState({message:e.target.value})
     }
