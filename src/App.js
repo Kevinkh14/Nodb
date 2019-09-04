@@ -17,7 +17,7 @@ class App extends Component{
   }
   render(){
      return (
-      <div className="App">
+      <main className="App">
         <div>
           <Header/>
           <img className = 'homeButton' 
@@ -42,7 +42,7 @@ class App extends Component{
         ): null}
         
         
-      </div>
+      </main>
     );
   }
 }

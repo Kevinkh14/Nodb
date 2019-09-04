@@ -30,7 +30,7 @@ export default class Messages extends Component{
        const {editting} =this.state;
        console.log(message,{index})
        return(
-           <div className = "text" >
+           <section className = "text" >
                {
                    editting
                    ?
@@ -51,7 +51,7 @@ export default class Messages extends Component{
                         this.props.update(response.data);
                     })
                 }}>Remove</button>
-           </div>
+           </section>
        )
    }
 }
